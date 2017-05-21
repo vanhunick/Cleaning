@@ -11,8 +11,13 @@
   <!-- JQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
+  <!-- Lato font -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet">
+
   <!-- bootstrap -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="css/index.css">
@@ -23,63 +28,79 @@
  <div class="container-fluid">
   <div class="row text-center">
     <div class="col-md-12">
-      <h1 id="header">Taupo Cleaning</h1>
+      <h1 id="title">Simply Clean</h1>
+      <h3 id="sub-title">Personal cleaning</h3>
     </div>
   </div>
 
-  <div class="row-fluid" >
-    <div class="col-md-offset-4 col-md-4" id="box">
-      <h2>Contact Me!</h2>
-        <hr>
-        <form class="form-horizontal" action="https://formspree.io/nickyvanhulst@gmail.com" method="POST" id="contact_form">
-          <fieldset>
-            <!-- Text input-->
-            <div class="form-group">
-              <div class="col-md-12">
-                <div class="input-group">
-                  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                  <input name="first_name" placeholder="Name" class="form-control" type="text">
-                  </div>
-              </div>
-            </div>
-      
-            <!-- Text input-->
-            <div class="form-group">
-                <div class="col-md-12">
-                    <div class="input-group">
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-                        <input name="email" placeholder="E-Mail Address" class="form-control" type="text">
-                    </div>
-                </div>
-            </div>
-            
-            <div class="form-group">
 
-                <div class="col-md-12">
-                    <div class="input-group">
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-                        <input name="phone" placeholder="(005)501-120101" class="form-control" type="text">
-                    </div>
-                </div>
-            </div>
+  <div class="row text-center" id="service-row">
+    <div class="col-md-4">
+      <h2>Service one</h2>
+      <div class="icon-wrapper"><i class="fa fa-bath custom-icon"><span class="fix-editor">&nbsp;</span></i></div>      
+      <p class="service-p">
+        essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+      </p>
+    </div>
+    <div class="col-md-4">
+      <h2>Service Two</h2>
+      <div class="icon-wrapper"><i class="fa fa-home custom-icon"><span class="fix-editor">&nbsp;</span></i></div>
+      <p class="service-p">
+        essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+      </p>
+    </div>
+    <div class="col-md-4">
+      <h2>Service Three</h2>
+        <div class="icon-wrapper"><i class="fa fa-recycle custom-icon"><span class="fix-editor">&nbsp;</span></i></div>
+        <p class="service-p">
+        essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+      </p>
+    </div>
+  </div>
 
-            <div class="form-group">
-                <div class="col-md-12 inputGroupContainer">
-                    <div class="input-group">
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
-                        <textarea class="form-control" name="comment" placeholder="Message"></textarea>
-                    </div>
-                </div>
-            </div>
+  <div class="row text-center">
+    <section id="section04" class="demo">
+      <a href="#contact-form-row"><span></span></a>
+    </section>
+    <h3 id="contact-me">Contact Me</h3>
+  </div>
 
-            <div class="form-group">
+<div class="row text-center" style="margin-bottom: 2%">
+<div class="col-md-6 text-right">
+<img src="svg/vacuum-cleaner.svg" alt="spray bottle" width="200px">
+</div>
+<div class="col-md-6 text-left">
+<img src="svg/spray-bottle.svg" alt="spray bottle" width="200px">
+</div>
+</div>
 
-                <div class="col-md-12">
-                    <button type="submit" class="btn btn-warning pull-right">Send <span class="glyphicon glyphicon-send"></span></button>
-                </div>
-            </div>
-        </fieldset>
-    </form>
-</div> 
-</div>  
+<div class="row" id="contact-form-row">
+<div class="col-md-12">
+<header>
+  <h1>CONTACT FORM</h1>
+</header>
+<section>
+  <div class="arrow-up"></div>
+  <form id="contact" class="form-horizontal" role="form">
+    <div class="form-group">  
+      <div class="col-sm-12">
+        <input id="name" name="name" type="text" placeholder="NAME" class="form-control">
+      </div>
+    </div>
+    <div class="form-group">  
+      <div class="col-sm-12">
+        <input id="email" name="email" type="email" placeholder="EMAIL" class="form-control">
+      </div>
+    </div>
+    <div class="form-group">  
+      <div class="col-sm-12">
+        <textarea class="form-control" id="message" name="message" placeholder="MESSAGE"></textarea>
+      </div>
+    </div>
+    <button id="send" name="send" class="btn btn-block">send</button>
+  </form>
+  </section>
+</div>
+</div>
 </body>
+<script src="js/index.js"></script>
