@@ -1,4 +1,7 @@
-@import url(http://fonts.googleapis.com/css?family=Oswald:400,700,300);
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700,300);
+
+
+
 .centered {
   margin: 0 auto;
   text-align: center;
@@ -19,9 +22,9 @@ body {
   font-weight: 300;
   padding-top: 40px;
 }
-body * {
+/*body * {
   outline: none !important;
-}
+}*/
 header h1 {
   text-transform: uppercase;
   margin: 0 auto;
@@ -51,6 +54,7 @@ section {
   border-right: 10px solid transparent;
   border-bottom: 10px solid #f7f7f7;
 }
+
 form#contact {
   margin: 0 auto;
   text-align: center;
@@ -59,6 +63,18 @@ form#contact {
   padding: 20px;
   background-color: #f7f7f7;
 }
+
+.images {
+  width:400px; 
+  margin:0 auto 0 auto; 
+  text-align:center; 
+}
+
+.alignHori {
+  display: inline-block;
+  text-align: center;
+}
+
 .form-control {
   box-shadow: none;
   border-radius: 0;
@@ -106,6 +122,7 @@ button#send {
   -o-transition:.5s;
   transition:.5s;
 }
+
 .custom-icon:hover {
   background:rgba(0,0,0,0.6);
 }
@@ -139,7 +156,6 @@ button#send {
 }
 
 #sub-title {
-  /*margin-right: 14%;*/
   margin-top: 0%;
   font-size: 200%;
   margin-bottom: 5%;
@@ -150,7 +166,7 @@ button#send {
 
 #contact-me {
   margin-top: 5%;
-  margin-bottom: 5%;
+  margin-bottom: 18%;
   font-weight: bold;
 }
 
@@ -168,15 +184,15 @@ section {
 
 
 #section04 a {
-  padding-top: 60px;
+  padding-top: 50px;
 }
 #section04 a span {
   position: absolute;
   top: 0;
   left: 50%;
-  width: 48px;
-  height: 48px;
-  margin-left: -24px;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
   border-left: 1px solid orangered;
   border-bottom: 1px solid orangered;
   -webkit-transform: rotate(-45deg);
@@ -208,3 +224,28 @@ section {
   }
 }
 
+@media only screen and (max-width: 500px) {
+  form#contact {
+    width: 100%;
+  }
+
+  header h1 {
+    width: 100%;
+  }
+
+  .images {
+    width: 100%; 
+  }
+
+  img {
+    width: 48%;
+  }
+
+  #contact-me {
+    margin-top: 10%;
+  }
+
+  #contact-me-row {
+    display: none;
+  }
+}
